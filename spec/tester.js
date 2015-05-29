@@ -1,15 +1,15 @@
 var path = require('path');
 var expect = require('chai').expect;
 
-var tester = require(path.join(__dirname, '..', './tester1.js'));
-console.log(tester);
-//console.log(path);
-console.log(expect);
-describe('tester()', function () {
+var c = require('../tester1.js');
+
+
+console.log(c);
+describe('c()', function () {
   'use strict';
 
   it('exists', function () {
-    expect(tester.is6()).to.be.a('function');
+    expect(c["function"]).to.be.a('function');
 
   });
 
@@ -22,7 +22,7 @@ describe('tester()', function () {
   });
   
   it('is 6', function (){
-    var y=tester.is6(6)
+    var y=c["function"](6);
     expect(y).to.equal(true);
   });
   // Add more assertions here
