@@ -2,6 +2,9 @@ var path = require('path');
 var expect = require('chai').expect;
 
 var tester = require(path.join(__dirname, '..', './tester1.js'));
+console.log(tester);
+//console.log(path);
+console.log(expect);
 describe('tester()', function () {
   'use strict';
 
